@@ -3,13 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>The app weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+<div class="container-fluid bg-dark " style="height: 60px;"></div>
+<div class="container mt-5">
 
+    <div class="row rounded d-block mb-5">
+        <label>City Name</label>
+        <input type="text" id="cityName"/>
+        <button class="btn btn-primary" placeholder="Enter city name" type="button" id="callAPI">show me the weather</button>
+    </div><!-- to add the city name-->
+
+    <div class="row">
+        <div class="form-group">
+            <h2 id="getThisDay" >Today</h2>
+            <h5 id="getThisDayDate" >...</h5>
+            <h5 id="getThisDayTemp" >...</h5>
+            <h5 id="getThisDayWeatherDescription" >...</h5>
+            <h5 id="getThisDayWindSpeed" >...</h5>
+        </div>
+    </div><!-- to display weather fot today-->
+    <button class="btn btn-primary" placeholder="Enter city name" type="button" id="dayNextHours">for next hours</button>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <h2 id="getNextDay" >Tomorrow</h2>
+                <h5 id="getNextDayDate" >...</h5>
+                <h5 id="getNextDayTemp" >...</h5>
+                <h5 id="getNextDayWeatherDescription" >...</h5>
+                <h5 id="getNextDayWindSpeed" >...</h5>
+            </div>
+        </div> <!-- to display weather fot 2 today-->
+        <div class="col-md-3">
+            <div class="form-group">
+                <h2 id="get3Day" >next</h2>
+                <h5 id="get3DayDate" >...</h5>
+                <h5 id="get3DayTemp" >...</h5>
+                <h5 id="get3DayWeatherDescription" >...</h5>
+                <h5 id="get3DayWindSpeed" >...</h5>
+            </div>
+        </div> <!-- to display weather fot 3 today-->
+        <div class="col-md-3">
+            <div class="form-group">
+                <h2 id="get4Day" >next</h2>
+                <h5 id="get4DayDate" >...</h5>
+                <h5 id="get4DayTemp" >...</h5>
+                <h5 id="get4DayWeatherDescription" >...</h5>
+                <h5 id="get4DayWindSpeed" >...</h5>
+            </div>
+        </div> <!-- to display weather fot 4 today-->
+        <div class="col-md-3">
+            <div class="form-group">
+                <h2 id="get5Day" >next</h2>
+                <h5 id="get5DayDate" >...</h5>
+                <h5 id="get5DayTemp" >...</h5>
+                <h5 id="get5DayWeatherDescription" >...</h5>
+                <h5 id="get5DayWindSpeed" >...</h5>
+            </div>
+        </div> <!-- to display weather fot 5 today-->
+
+    </div><!-- to display weather fot today-->
+
+</div>
 <div>
-    <label >City  Name</label>
-    <input type="text"  id="cityName" />
-    <button type="button" id="callAPI">Run the script</button>
+
+</div>
+<div>
+    <button type="button" id="callDay1">Today</button>
+    <button type="button" id="callDay2">Next 1 day</button>
+    <button type="button" id="callDay3">Next 2 days</button>
+    <button type="button" id="callDay4">Next 3 days</button>
+    <button type="button" id="callDay5">Next 4 days</button>
 </div>
 
 <script src="script.js"></script>
