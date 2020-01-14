@@ -6,67 +6,84 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-<div class="container-fluid bg-dark " style="height: 60px;"></div>
-<div class="container mt-5">
-    <div class="row rounded d-block mb-5">
-        <label>City Name</label>
+<body style="background-image: url('bg.jpg')">
+
+<div class="container-fluid bg-dark " style="height: 70px;">
+    <div class="row rounded d-block py-3 pl-5">
+        <label class="text-warning mr-2">City Name</label>
         <input type="text" id="cityName"/>
-        <button class="btn btn-primary" placeholder="Enter city name" type="button" id="callAPI">show me the weather
-        </button>
+        <button class="btn bg-warning" placeholder="Enter city name" type="button" id="callAPI">VIEW THE WEATHER </button>
     </div><!-- to add the city name-->
+</div> <!-- header-->
+<div class="container mt-5">
 
-    <div class="row">
-        <div class="form-group">
-            <h2 id="getThisDay">Today</h2>
-            <h5 id="getThisDayDate">...</h5>
-            <h5 id="getThisDayTemp">...</h5>
-            <h5 id="getThisDayWeatherDescription">...</h5>
-            <h5 id="getThisDayWindSpeed">...</h5>
-        </div>
-    </div><!-- to display weather fot today-->
+    <div class="row my-3 col-sm-12 col-md-6 bg-dark ">
+        <div class="form-group bg-dark p-3 rounded ">
+            <h3 id="getThisDay" class="text-warning">Today</h3>
+            <div class="px-4 text-white">
+                <h6 id="getThisDayDate">...</h6>
+                <h6 id="getThisDayTemp">...</h6>
+                <h6 id="getThisDayWeatherDescription">...</h6>
+                <h6 id="getThisDayWindSpeed">...</h6>
+            </div><!-- group of information about this day -->
+        </div><!-- bg and padding and rounded-->
+    </div><!-- row to display weather fot today-->
 
-    <div class="row">
-        <div class="col-md-3">
-            <div class="form-group">
-                <h2 id="getNextDay">Tomorrow</h2>
-                <h5 id="getNextDayDate">...</h5>
-                <h5 id="getNextDayTemp">...</h5>
-                <h5 id="getNextDayWeatherDescription">...</h5>
-                <h5 id="getNextDayWindSpeed">...</h5>
-            </div>
-        </div> <!-- to display weather fot 2 today-->
-        <div class="col-md-3">
-            <div class="form-group">
-                <h2 id="get3Day">next</h2>
-                <h5 id="get3DayDate">...</h5>
-                <h5 id="get3DayTemp">...</h5>
-                <h5 id="get3DayWeatherDescription">...</h5>
-                <h5 id="get3DayWindSpeed">...</h5>
-            </div>
-        </div> <!-- to display weather fot 3 today-->
-        <div class="col-md-3">
-            <div class="form-group">
-                <h2 id="get4Day">next</h2>
-                <h5 id="get4DayDate">...</h5>
-                <h5 id="get4DayTemp">...</h5>
-                <h5 id="get4DayWeatherDescription">...</h5>
-                <h5 id="get4DayWindSpeed">...</h5>
-            </div>
-        </div> <!-- to display weather fot 4 today-->
-        <div class="col-md-3">
-            <div class="form-group">
-                <h2 id="get5Day">next</h2>
-                <h5 id="get5DayDate">...</h5>
-                <h5 id="get5DayTemp">...</h5>
-                <h5 id="get5DayWeatherDescription">...</h5>
-                <h5 id="get5DayWindSpeed">...</h5>
-            </div>
-        </div> <!-- to display weather fot 5 today-->
+    <div class="row bg-danger">
+
+        <div class="col-md-3 col-sm-6 bg-dark">
+            <div class="form-group p-3 rounded">
+                <h3 id="getNextDay" class="text-warning">Tomorrow</h3>
+                <div class="px-2 text-white">
+                    <h6 id="getNextDayDate">...</h6>
+                    <h6 id="getNextDayTemp">...</h6>
+                    <h6 id="getNextDayWeatherDescription">...</h6>
+                    <h6 id="getNextDayWindSpeed">...</h6>
+                </div><!-- group of information about this day -->
+            </div><!-- bg and padding and rounded-->
+        </div> <!-- row to display weather fot 2 today-->
+
+        <div class="col-md-3 col-sm-6  bg-dark">
+            <div class="form-group  p-3 rounded">
+                <h3 id="get3Day" class="text-warning">next</h3>
+                <div class="px-2 text-white">
+                    <h6 id="get3DayDate">...</h6>
+                    <h6 id="get3DayTemp">...</h6>
+                    <h6 id="get3DayWeatherDescription">...</h6>
+                    <h6 id="get3DayWindSpeed">...</h6>
+                </div><!-- group of information about this day -->
+            </div><!-- bg and padding and rounded-->
+        </div> <!-- row to display weather fot 3 today-->
+
+        <div class="col-md-3 col-sm-6  bg-dark ">
+            <div class="form-group p-3 rounded">
+                <h3 id="get4Day"class="text-warning">next</h3>
+                <div class="px-2 text-white">
+                    <h6 id="get4DayDate">...</h6>
+                    <h6 id="get4DayTemp">...</h6>
+                    <h6 id="get4DayWeatherDescription">...</h6>
+                    <h6 id="get4DayWindSpeed">...</h6>
+                </div><!-- group of information about this day -->
+            </div><!-- bg and padding and rounded-->
+        </div> <!-- row to display weather fot 4 today-->
+
+        <div class="col-md-3 col-sm-6 bg-dark">
+            <div class="form-group p-3 rounded">
+                <h3 id="get5Day" class="text-warning">next</h3>
+                <div class="px-2 text-white">
+                    <h6 id="get5DayDate">...</h6>
+                    <h6 id="get5DayTemp">...</h6>
+                    <h6 id="get5DayWeatherDescription">...</h6>
+                    <h6 id="get5DayWindSpeed">...</h6>
+                </div><!-- group of information about this day -->
+            </div><!-- bg and padding and rounded-->
+        </div> <!-- row to display weather fot 5 today-->
 
     </div><!-- to display weather fot next days-->
 
 </div> <!-- container end-->
+
+<div class="container-fluid bg-dark mt-5" style="height: 60px;"></div> <!-- footer-->
 
 <script src="script.js"></script>
 </body>

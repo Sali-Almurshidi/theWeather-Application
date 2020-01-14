@@ -67,10 +67,13 @@ function printThisDayWeather() {
 
 function printData(data) {
     arrayInfo = data;
+    console.log(arrayInfo);
     printThisDayWeather(); // to print this day information
     // get form for the next day but need to fix it
     const today = new Date();
+    console.log(today);
     const nextDay = new Date(today);
+    console.log(today);
     var tomorrow = nextDay.getDate() + 1;
     var tM = nextDay.getMonth() + 1;
     var year = nextDay.getFullYear();
@@ -140,7 +143,3 @@ document.getElementById("callAPI").addEventListener("click", function () {
     cityName = document.getElementById("cityName").value;
     getData(cityName);
 });// add event listener for the button
-
-
-
-
