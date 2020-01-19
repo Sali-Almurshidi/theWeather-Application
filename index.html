@@ -15,7 +15,8 @@
         <button class="btn bg-warning" placeholder="Enter city name" type="button" id="callAPI">VIEW THE WEATHER </button>
     </div><!-- to add the city name-->
 </div> <!-- header-->
-<div class="container mt-5">
+
+<div class="container mt-5 " >
 
     <div class="row my-3 col-sm-12 col-md-6 bg-dark ">
         <div class="form-group bg-dark p-3 rounded ">
@@ -29,61 +30,13 @@
         </div><!-- bg and padding and rounded-->
     </div><!-- row to display weather fot today-->
 
-    <div class="row bg-danger">
-
-        <div class="col-md-3 col-sm-6 bg-dark">
-            <div class="form-group p-3 rounded">
-                <h3 id="getNextDay" class="text-warning">Tomorrow</h3>
-                <div class="px-2 text-white">
-                    <h6 id="getNextDayDate">...</h6>
-                    <h6 id="getNextDayTemp">...</h6>
-                    <h6 id="getNextDayWeatherDescription">...</h6>
-                    <h6 id="getNextDayWindSpeed">...</h6>
-                </div><!-- group of information about this day -->
-            </div><!-- bg and padding and rounded-->
-        </div> <!-- row to display weather fot 2 today-->
-
-        <div class="col-md-3 col-sm-6  bg-dark">
-            <div class="form-group  p-3 rounded">
-                <h3 id="get3Day" class="text-warning">next</h3>
-                <div class="px-2 text-white">
-                    <h6 id="get3DayDate">...</h6>
-                    <h6 id="get3DayTemp">...</h6>
-                    <h6 id="get3DayWeatherDescription">...</h6>
-                    <h6 id="get3DayWindSpeed">...</h6>
-                </div><!-- group of information about this day -->
-            </div><!-- bg and padding and rounded-->
-        </div> <!-- row to display weather fot 3 today-->
-
-        <div class="col-md-3 col-sm-6  bg-dark ">
-            <div class="form-group p-3 rounded">
-                <h3 id="get4Day"class="text-warning">next</h3>
-                <div class="px-2 text-white">
-                    <h6 id="get4DayDate">...</h6>
-                    <h6 id="get4DayTemp">...</h6>
-                    <h6 id="get4DayWeatherDescription">...</h6>
-                    <h6 id="get4DayWindSpeed">...</h6>
-                </div><!-- group of information about this day -->
-            </div><!-- bg and padding and rounded-->
-        </div> <!-- row to display weather fot 4 today-->
-
-        <div class="col-md-3 col-sm-6 bg-dark">
-            <div class="form-group p-3 rounded">
-                <h3 id="get5Day" class="text-warning">next</h3>
-                <div class="px-2 text-white">
-                    <h6 id="get5DayDate">...</h6>
-                    <h6 id="get5DayTemp">...</h6>
-                    <h6 id="get5DayWeatherDescription">...</h6>
-                    <h6 id="get5DayWindSpeed">...</h6>
-                </div><!-- group of information about this day -->
-            </div><!-- bg and padding and rounded-->
-        </div> <!-- row to display weather fot 5 today-->
-
+    <div class="row bg-danger" id="weatherForNextDays">
+        <!-- add from js-->
     </div><!-- to display weather fot next days-->
 
 </div> <!-- container end-->
 
-<div class="container-fluid bg-dark mt-5" style="height: 60px;"></div> <!-- footer-->
+<footer class="container-fluid bg-dark mt-5 card-body " style="height: 60px; bottom: 0; position: absolute;"></footer> <!-- footer-->
 
 <script src="script.js"></script>
 </body>

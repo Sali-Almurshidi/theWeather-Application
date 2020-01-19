@@ -1,0 +1,7 @@
+{
+  "name": "theWeather-Application",
+  "version": "1.0.0",
+  "dependencies": {
+    "react-dom": "^16.12.0"
+  }
+}
